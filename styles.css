@@ -1,0 +1,142 @@
+* {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+}
+
+body {
+  background-color: #F9F8F8;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+}
+
+.card {
+  margin: 2rem auto 0;
+  width: 90%;
+  height: 154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  background-color: #FF6954;
+  padding: 0 2rem;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card__header {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.card__balance {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+
+.card__button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #FFA89C;
+  padding: .4rem 1rem;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.card__balance, .card__button {
+  margin-top: .5rem;
+}
+
+.pot {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.pot__item {
+  height: 157px;
+  width: 157px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pot__item--create {
+  border: 1px dashed rgba(0, 0, 0, 0.5);
+}
+
+.pot__item--create button {
+  color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.pot__item--added {
+  background-color: #e57a6c;
+  padding: .5rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pot__name {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.pot__amount {
+  font-size: 21px;
+}
+
+.pot__buttons button {
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+}
+
+.pot__buttons button + button {
+  margin-left: 1rem;
+}
+
+.pot__buttons .add {
+  background-color: #00cc11;
+}
+
+.pot__buttons .withdrawl {
+  background-color: #cc0000;
+}
+/*# sourceMappingURL=styles.css.map */
